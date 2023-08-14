@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+
+/* hamburger menu bar */
+.hamburger{
+    color: white;
+    font-size: 22px;
+    float: right;
+    margin-right: 40px;
+    margin-top: -35px;
+    display: none;
+}
+
+.logo{
+    font-size: 1.5em;
+    color: white;
+    margin-left: 70px;
+    position: absolute;
+    top: 3vh;
+    cursor: pointer;
+}
+
+/* navigation bar */
+.mapping{
+    background-color: rgb(0, 119, 255);
+    height: 12vh;
+    
+}
+
+.mapping-datas{
+    float: right;
+    margin-top: -10vh;
+}
+
+ul{
+    list-style: none;
+    margin-right: 90px;
+}
+
+li{
+    display: inline-block;
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.active{
+    background-color: #ff3c78;
+    padding: 6px;
+    border: .5 solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.active:hover{
+    background-color: brown;
+    transition: 1s;
+}
+
+.non-active::after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 63%;
+    bottom: 90vh;
+}
+
+.non-active:hover::after{
+    width: 9%;
+    transition: 1s;
+}
+
+.non-active-1::after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 72%;
+    bottom: 90vh;
+}
+
+.non-active-1:hover::after{
+    width: 10%;
+    transition: 1s;
+}
+
+.non-active-2::after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 83%;
+    bottom: 90vh;
+}
+
+.non-active-2:hover::after{
+    width: 10%;
+    transition: 1s;
+}
+/* ended here */
+
+
+
+.contents{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20vh;
+}
+
+#size-1{
+    position: absolute;
+    left: 65%;
+    top: 20%;
+    height: 70%;
+    width: 30%;
+}
+
+.no-me{
+    overflow: auto;
+    font-size: 2.8em;
+    color: white;
+}
+
+
+/* for responsive site */
+
+@media  screen and (max-width: 420px){
+
+    ul{
+        display: none;
+    }
+
+    .logo{
+        font-size: 1.5em;
+        color: white;
+        margin-left: 70px;
+        position: absolute;
+        top: 3vh;
+        cursor: pointer;
+    }
+
+    /* navigation bar */
+    .mapping{
+        background-color: rgb(0, 119, 255);
+        height: 12vh;
+        
+    }
+
+    .mapping-datas{
+        float: right;
+        margin-top: -10vh;
+    }
+
+    ul{
+        list-style: none;
+        margin-right: 90px;
+    }
+
+    li{
+        display: inline-block;
+        margin: 15px;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .active{
+        background-color: #ff3c78;
+        padding: 6px;
+        border: .5 solid black;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .active:hover{
+        background-color: brown;
+        transition: 1s;
+    }
+
+    .non-active::after{
+        content: "";
+        position: absolute;
+        background-color: #ff3c78;
+        height: 3px;
+        width: 0;
+        left: 63%;
+        bottom: 90vh;
+    }
+
+    .non-active:hover::after{
+        width: 9%;
+        transition: 1s;
+    }
+
+    .non-active-1::after{
+        content: "";
+        position: absolute;
+        background-color: #ff3c78;
+        height: 3px;
+        width: 0;
+        left: 72%;
+        bottom: 90vh;
+    }
+
+    .non-active-1:hover::after{
+        width: 10%;
+        transition: 1s;
+    }
+
+    .non-active-2::after{
+        content: "";
+        position: absolute;
+        background-color: #ff3c78;
+        height: 3px;
+        width: 0;
+        left: 83%;
+        bottom: 90vh;
+    }
+
+    .non-active-2:hover::after{
+        width: 10%;
+        transition: 1s;
+    }
+    /* ended here */
+
+
+
+    .contents{
+        display: flex;
+        margin-left: 50px;
+        margin-top: 8vh;
+    }
+
+    #size-1{
+        position: absolute;
+        left: calc(10% + 10px);
+        top: calc(65% + 30px);
+        overflow: hidden;
+        height: 200px;
+        width: 70vw;
+    }
+
+    .no-me{
+        overflow: auto;
+        font-size: 7vw;
+        color: white;
+    }
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Site</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9dd356b4fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="class-1">
+        <div class="map">
+            <div class="items">
+                <nav class="mapping">
+                    <label class="logo"><a class="at-logo" href="proto.html">PHIlip</a></label>
+                </nav>
+
+                <nav class="mapping-datas">
+                    <ul>
+                        <li><a class="active" href="proto.html">home</a></li>
+                        <li><a class="non-active" href="">about me</a></li>
+                        <li><a class="non-active-1" href="">my services</a></li>
+                        <li><a class="non-active-2" href="">Contact me</a></li>
+
+                        <div class="hamburger">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="class-2">
+        <div class="img-1">
+            <img id="size-1" src="alexandra-jjoQnNS1bu4-unsplash.jpg" alt="">
+        </div>
+            <div class="contents">
+                    <p class="no-me">
+                        Introducing Myself, <br> also recognized as Philip Kunwar 
+                        <br> a dedicated guitarist and accomplished songwriter. <br>
+                        Through the strings of guitar, <br>
+                        I paints emotions into melodies, creating music that resonates. <br> 
+                        With a heart for crafting songs.
+                    </p>
+            </div>
+    </section>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const ul = document.querySelector('ul');
+
+        hamburger.addEventListener('click',()=>{
+            ul.classList.toggle('ham_active')
+        });
+    </script>
+</body>
+</html>
